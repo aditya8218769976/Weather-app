@@ -4,7 +4,7 @@ import axios from "axios";
 // import WeatherDimension from "../weatherDetails/WeatherDimension";
 
 const WeatherBg = (props) => {
-  const apiKey = "45e43b6c016a03745ea3dd5b24b221f7";
+  const apiKey = "766d18dd055b5a3837d207dc60cbfd8d";
   const [data, setData] = useState({});
   const [inputCity, setInputCity] = useState("");
 
@@ -12,8 +12,11 @@ const WeatherBg = (props) => {
     if (!cityName) {
       return;
     }
+
+    // const apiUrl= "http://api.openweathermap.org/data/2.5/weather?q= " + cityName + "&appid"
+
     const apiUrl =
-      "http://api.openweathermap.org/data/2.5/weather?q= " +
+      "http://api.openweathermap.org/data/2.5/weather?q=" +
       cityName +
       "&appid=" +
       apiKey;
