@@ -75,7 +75,6 @@
     column-gap: 0em;
   }
 }
-
 @media only screen and (max-width: 480px) {
   .lat-style {
     text-align: center !important;
